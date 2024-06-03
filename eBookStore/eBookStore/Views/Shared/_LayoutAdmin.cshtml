@@ -1,0 +1,88 @@
+﻿<!-- Views/Shared/_Layout.cshtml -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - eBookStore</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .sidebar {
+            background-color: #343a40;
+            height: 100vh;
+            padding-top: 20px;
+        }
+
+            .sidebar a {
+                color: white;
+                padding: 15px;
+                text-align: center;
+                display: block;
+                text-decoration: none;
+            }
+
+                .sidebar a:hover {
+                    border-radius: 10px;
+                    background-color: #745691;
+                }
+
+        .content {
+            padding: 20px;
+        }
+
+        .nav-link.active {
+            border-radius:10px;
+            background-color: #5a2091; /* Màu nền khi liên kết được chọn */
+            color: #fff; /* Màu chữ khi liên kết được chọn */
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+       
+        <div class="row" >
+            <div class="col-md-2 d-none d-md-block sidebar" style="background-image: url('../img/oip.jpg');background-repeat: round;margin-top:20px ;border-radius: 10px;">
+               
+                        <h3 class="text-center text-light" >BookStore</h3>
+                 
+              
+                <ul class="nav flex-column" style="margin-top:30px">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Home</a>
+                    </li>
+                    <li class="nav-item nav-">
+                        <a class="nav-link" href="#">User</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Author</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">publisher</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+            <main role="main" class="col-md-6 ml-sm-auto col-lg-10 content">
+                <div class="row" style="background-image: url('../img/oip.jpg') ;height:50px;border-radius: 10px;">
+                    <div class="col-md-12"></div>
+                </div>
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

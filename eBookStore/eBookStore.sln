@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eBookStore", "eBookStore\eBookStore.csproj", "{839A1539-5130-42CE-B1CB-43D24C2B28BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAPI", "MyAPI\MyAPI.csproj", "{2B62255C-7BFB-45A2-941A-1DD209386AED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{839A1539-5130-42CE-B1CB-43D24C2B28BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{839A1539-5130-42CE-B1CB-43D24C2B28BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{839A1539-5130-42CE-B1CB-43D24C2B28BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{839A1539-5130-42CE-B1CB-43D24C2B28BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B62255C-7BFB-45A2-941A-1DD209386AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B62255C-7BFB-45A2-941A-1DD209386AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B62255C-7BFB-45A2-941A-1DD209386AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B62255C-7BFB-45A2-941A-1DD209386AED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D6E2FFD8-208C-4ED7-883A-451502BFA3F5}
+	EndGlobalSection
+EndGlobal

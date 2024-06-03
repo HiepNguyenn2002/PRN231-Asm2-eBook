@@ -1,0 +1,101 @@
+﻿@model eBookStore.Models.User ;
+@{
+    ViewData["Title"] = "Your Title";
+     var pubList = ViewData["pubID"] as SelectList;
+}
+<style>
+    body {
+    }
+
+    .form-control:focus {
+        box-shadow: none;
+    }
+
+    .profile-button {
+        box-shadow: none;
+        border: none
+    }
+
+        .profile-button:hover {
+            background: #682773
+        }
+
+        .profile-button:focus {
+            background: #682773;
+            box-shadow: none
+        }
+
+        .profile-button:active {
+            background: #682773;
+            box-shadow: none
+        }
+
+    .back:hover {
+        color: #682773;
+        cursor: pointer
+    }
+
+    .labels {
+        font-size: 11px
+    }
+
+</style>
+<form method="post" action="../Home/UpdateProfile">
+
+    <div class="container rounded bg-white mt-5 mb-5">
+        <div class="row" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+            <div class="col-md-3 border-right">
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+                    <img class="rounded-3 mt-5" width="150px" src="~/img/picture1.jpg">
+                    <span class="font-weight-bold"> @Model.FullName</span><span class="text-black-50"></span><span>@Model.EmailAddress </span>
+                </div>
+            </div>
+
+
+            <div class="col-md-5 border-right">
+                <div class="p-3 py-5">
+
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="text-right">Profile Settings</h4>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col-md-6">
+                            <label class="labels">FullName</label>
+                            <input style="border: 1px solid #dee2e6;" type="text" class="form-control" placeholder="Full name" name="fullName" id="fullName" value="@Model.FullName">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="labels">Source</label>
+                            <input style="border: 1px solid #dee2e6;" type="text" class="form-control" placeholder="source" name="source" id="source" value="@Model.Source">
+                        </div>
+                       
+                        <div class="col-md-12">
+                            <div class="mb-1" id="roleForm">
+                                <label for="publisher" class="form-label">Publisher</label>
+                                <select style="border: 1px solid #dee2e6;" name="publisher" class="form-control" id="publisher" asp-for="PubId" asp-items="pubList">
+                                    <option>Không có</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-12">
+                            <label for="" class="form-label">Hire date</label>
+                            @{
+                                // Convert DateTime to string with "yyyy-MM-dd" format
+                                string formattedDate = Model.HireDate?.ToString("yyyy-MM-dd");
+                            }
+                            <input style="border: 1px solid #dee2e6;" type="date" class="form-control" name="hireDate" id="hireDate" placeholder="hireDate" value="@formattedDate">
+                        </div>
+                    </div>
+                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="submit">Save Profile</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+

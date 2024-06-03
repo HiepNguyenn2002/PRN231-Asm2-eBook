@@ -1,0 +1,60 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+
+}
+
+
+.login-form {
+    height: 350px;
+    margin-top: 50px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+    /* Định dạng các tiêu đề và văn bản */
+    .login-form h2 {
+        margin-bottom: 20px;
+    }
+
+    .login-form label {
+        font-weight: bold;
+    }
+
+    /* Định dạng nút đăng nhập */
+    .login-form button {
+        margin: 10px;
+        width: 100%;
+        float: right;
+        width: 80px;
+    }
+
+/* Định dạng lỗi xác thực */
+.text-danger {
+    color: #d9534f;
+}
+
+.left-column {
+    background-image: url('../img/r.jpg');
+    background-size: cover; /* Để hình nền bao phủ toàn bộ màn hình */
+    background-position: center; /* Để hình nền căn giữa */
+    background-repeat: no-repeat; /* Không lặp lại hình nền */
+    height: 47vh; /* Để phần tử body có chiều cao bằng chiều cao viewport */
+    margin: 0; /* Loại bỏ khoảng trắng mặc định */
+}
