@@ -29,7 +29,7 @@ namespace MyAPI.Controllers
                 YtdSales = x.YtdSales,
                 Notes = x.Notes,
                 PublisherDate = x.PublisherDate,
-                Pub = x.Pub
+                PubName = x.Pub.PublisherName
 
             }).ToList();
 

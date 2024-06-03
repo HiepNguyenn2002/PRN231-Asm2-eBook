@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zoFZVJMlKCkw5MscphEN4wmj7QAKO1MdW3Ct080N3vLniQcZy+oCIj6N4kl5I+XSOydKmr742G5XmpSXen33xw==",
+  "dgSpecHash": "SxkvQQUgCgdAr5LHhc3vcix9TO1lTlU6U8TYhG10V6vl5E5xjr3N+7pUyidqWPYx78M1AFG6u1B5jdBDPun0vA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hoang\\OneDrive\\Documents\\PRN231\\eBookStore\\MyAPI\\MyAPI.csproj",
+  "projectFilePath": "C:\\Users\\hoang\\OneDrive\\Documents\\PRN231\\Assignment-2-PRN231\\eBookStore\\MyAPI\\MyAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hoang\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\hoang\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
